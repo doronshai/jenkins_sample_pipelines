@@ -1,4 +1,4 @@
-@Library('tikal-advanced-pipeline')
+@Library('tikal-advanced-pipeline@master')
 import com.tikalk
 
 pipeline 
