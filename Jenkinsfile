@@ -1,8 +1,8 @@
+@Library('tikal-advanced-pipeline')
+import com.tikalk
+
 pipeline 
 {
-    @Library('tikal-advanced-pipeline')
-    import com.tikalk
-    
     agent any
     stages 
     {
