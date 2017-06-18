@@ -1,5 +1,3 @@
-@Library('tikal-advanced-pipeline')
-
 import com.tikalk
 
 pipeline 
