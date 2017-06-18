@@ -17,13 +17,13 @@ pipeline
     }
     post {
         success {
-            notifyBuild('SUCCESS')
+            notifyBuild('SUCCESS', 'sample.html')
         }
         failure {
-            notifyBuild('FAILURE')
+            notifyBuild('FAILURE', 'sample.html')
         }  
         unstable {
-            notifyBuild('UNSTABLE')
+            notifyBuild('UNSTABLE', 'sample.html')
         }            
     }
 }
