@@ -2,7 +2,7 @@
 
 @Library('tikal-advanced-pipeline') _
 
-import com.tikalk
+import com.tikalk.utils
 
 pipeline 
 {
