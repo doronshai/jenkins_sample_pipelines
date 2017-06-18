@@ -2,7 +2,7 @@
 
 @Library('tikal-advanced-pipeline@master') _
 
-import com.tikalk.utils
+import com.tikalk.notifyBuild
 
 pipeline 
 {
