@@ -1,5 +1,7 @@
 #!/usr/bin/env groovy
 
+@Library('tikal-advanced-pipeline') _
+
 import com.tikalk
 
 pipeline 
