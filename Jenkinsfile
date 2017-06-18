@@ -18,7 +18,7 @@ pipeline
     post {
         success {
             echo "===================== 1.0 ========================"
-            notifyBuild('SUCCESS', '${WORKSPACE}\\sample.html')
+            notifyBuild('SUCCESS', 'sample.html') // '${WORKSPACE}\\sample.html'
             echo "===================== 2.0 ========================"
         }
         failure {
