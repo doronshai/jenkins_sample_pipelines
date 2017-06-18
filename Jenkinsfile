@@ -2,8 +2,6 @@
 
 @Library('tikal-advanced-pipeline@master') _
 
-import com.tikalk.notifyBuild
-
 pipeline 
 {
     agent any
@@ -19,13 +17,13 @@ pipeline
     }
     post {
         success {
-            utils(notifyBuild('SUCCESS', 'sample.html'))
+            notifyBuild('SUCCESS', 'sample.html')
         }
         failure {
-            utils(notifyBuild('FAILURE', 'sample.html'))
+            notifyBuild('FAILURE', 'sample.html')
         }  
         unstable {
-            utils(notifyBuild('UNSTABLE', 'sample.html'))
+            notifyBuild('UNSTABLE', 'sample.html')
         }            
     }
 }
