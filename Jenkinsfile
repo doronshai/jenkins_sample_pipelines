@@ -20,7 +20,7 @@ pipeline
         success {
             echo "===================== 1.0 ========================"
             sh "echo \$(pwd)"
-            sh "ll \$(pwd)/sample.html"            
+            sh "ls -la \$(pwd)/sample.html"            
             TAP_email('SUCCESS','sample.html')
             echo "===================== 2.0 ========================"
         }
