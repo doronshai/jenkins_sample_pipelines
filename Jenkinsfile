@@ -18,14 +18,14 @@ pipeline
     post {
         success {
             echo "===================== 1.0 ========================"
-            notifyBuild('SUCCESS', 'sample.html')
+            notifyBuild('SUCCESS','sample.html')
             echo "===================== 2.0 ========================"
         }
         failure {
-            notifyBuild('FAILURE', '${WORKSPACE}\\sample.html')
+            notifyBuild('FAILURE','sample.html')
         }  
         unstable {
-            notifyBuild('UNSTABLE', '${WORKSPACE}\\sample.html')
+            notifyBuild('UNSTABLE','sample.html')
         }            
     }
 }
