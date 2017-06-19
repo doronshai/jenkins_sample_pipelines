@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-@Library('tikal-advanced-pipeline@master') _
+@Library("tikal-advanced-pipeline") _
 
 pipeline 
 {
