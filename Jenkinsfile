@@ -23,12 +23,15 @@ pipeline
             sh "ls -la \$(pwd)/sample.html"            
             TAP_email('SUCCESS','sample.html')
             echo "===================== 2.0 ========================"
+            deleteDir()
         }
         failure {
             TAP_email('FAILURE','sample.html')
+            deleteDir()            
         }  
         unstable {
             TAP_email('UNSTABLE','sample.html')
+            deleteDir()            
         }            
     }
 }
